@@ -22,10 +22,6 @@ const initialState = {
 
 export default function contact(state = initialState, action) {
   switch (action.type) {
-    case types.SEARCH:
-      return {
-        keyword: action.keyword
-      };
     case types.CREATE:
       return {
         ...state,

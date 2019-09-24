@@ -1,4 +1,3 @@
-export const SEARCH = "SEARCH";
 export const SHOW_DETAIL = "SHOW_DETAIL";
 export const EDIT = "EDIT";
 export const CREATE = "CREATE";

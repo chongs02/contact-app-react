@@ -1,42 +1,36 @@
 import * as types from "./ActionTypes";
 
-export function search(keyword) {
-  return {
-    type: types.SEARCH,
-    keyword
-  };
-}
-
 export function showDetail() {
   return {
     type: types.SHOW_DETAIL
   };
 }
 
-export function edit(data) {
+export function edit(contactData) {
   return {
     type: types.EDIT,
-    editData: data
+    editData: contactData
   };
 }
 
-export function create(data) {
+export function create(contactData) {
   return {
     type: types.CREATE,
-    createData: data
+    createData: contactData
   };
 }
 
-export function remove(data) {
+export function remove(contactData) {
   return {
     type: types.REMOVE,
-    removeData: data
+    removeData: contactData
   };
 }
 
-export function toggle(eventValue) {
+export function toggle(eventValue, isEdit) {
   return {
     type: types.TOGGLE,
-    keyword: eventValue
+    keyword: eventValue,
+    isEdit: !isEdit
   };
 }
